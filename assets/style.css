@@ -15,6 +15,10 @@ nav {
     display: inline;
 }
 
+.nav-links li:not(:last-child) {
+    margin-right: 10px;
+}
+
 .nav-links li a {
     color: whitesmoke;
     text-decoration: none;
@@ -23,6 +27,21 @@ nav {
 
 main {
     height: 80vh;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.left {
+    background-color: yellow;
 }
 
 footer {
